@@ -55,45 +55,6 @@ function CommenMsg(msg) {
 }
 
 
-<!--两个banner图轮播效果-->
-//window.onload=function (){
-//	var index=0;//默认第0张图片
-//	var figure=document.getElementById("figure");
-//	var autoId=0;
-//	var animateId=0;
-//	function autoChange(){
-//			index++;
-//			if(index>3){index=0;}else if(index<0){index=4;}
-//			change();	
-//		}			
-//	function change(){
-//		clearTimeout(autoId);
-//		clearInterval(animateId);
-//		if(index==0){
-//			figure.scrollLeft=0+"px";
-//			}		
-//		animateId=setInterval(animate,10);			
-//	}
-//	function animate(){			
-//		var left=parseInt(figure.scrollLeft);		
-//		innerHTML=left+"---"+index;		
-//		var topos=index*800;		
-//		var dis=topos-left;
-//		figure.scrollLeft=left+2+Math.floor(dis/100);			
-//		if(left>=topos&&left!=0){
-//			figure.scrollLeft=topos;
-//			if(autoId!=null){
-//			autoId=setTimeout(autoChange,2000);
-//			}
-//			clearInterval(animateId);
-//			}	
-//		}
-////	figure.onmouseover=function(){clearTimeout(autoId);autoId=null; }
-////	figure.onmouseout=function(){autoId=setTimeout(autoChange,2000);}
-//	}
-
-
-
 
 //点击喇叭弹出消息栏
 function gg_click() {
@@ -257,11 +218,6 @@ $(function () {
                 data: { "type": "_shacar", "_cakelist": cakelist, "log": "0" },
                 success: function (data) {
                     if (data.msg == "加入购物车成功") {
-                        //                       if ($("#hid").val() == "1") {
-                        //                           //location.href = "/manage/buycart.html";
-                        //                        }
-                        //                        else {
-                        // location.href = "/ShaFirOrder.html";
                         location.href = "/login.html?url=buycart.html";
                         //}
                     } else { CommenMsg(data.msg); }
