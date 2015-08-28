@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import "reset";
+%ul{
+	list-style: circle url(../img/lvmama/dis.png);
+	li{
+		line-height: 24px;
+		font-size: 14px;
+		color: #807b7b;
+	}
+}
+.lvmama-container{
+	width: 1000px;
+	@at-root{
+		.header{
+			img{
+				display: block;
+			}
+		}
+		.lvmama-content{
+			position: relative;
+			padding: 160px 0 77px 50px;
+			background: url(../img/lvmama/lv03.png) no-repeat right bottom;
+			.pro{
+				position: absolute;
+				top: -110px;
+				right: 0;
+				-webkit-user-select: none;
+				a{
+					position: absolute;
+					display: block;
+					width: 230px;
+					padding: 0 15px;
+					font-size: 18px;
+					text-decoration: none;
+					line-height: 35px;
+					border-radius: 50px;
+					color: #fff;
+					background: #fb8080;
+					span{
+						float: right;
+						font-size: .8em;
+					}
+					&.btn1{
+						bottom: -30px;
+						left: 65px;
+					}
+					&.btn2{
+						bottom: 20px;
+						left: 410px;
+					}
+				}
+			}
+			h2{
+				color: #df5899;
+				font-size: 18px;
+			}
+			ul{
+				width: 255px;
+				padding-left: 20px;
+				@extend %ul;
+			}
+		}
+		.lvmama-footer{
+			box-shadow: inset 0 3px 2px #999;
+			height: 209px;
+			background: #ffe3e3 url(../img/lvmama/lv04.png) left bottom no-repeat;
+			.logbox{
+				float: left;
+				width: 204px;
+				padding: 28px 0 0 188px;
+				text-align: center;
+				margin-right: 50px;
+				a{
+					display: block;
+					line-height: 2em;
+					color: #666;
+				}
+				button{
+					width: 202px;
+					height: 37px;
+					border-radius: 5px;
+					text-align: left;
+					border: none;
+					outline: none;
+					color: #e71884;
+					background: #fff;
+					span{
+						display: inline-block;
+						width: 125px;
+						height: 22px;
+						text-align: center;
+						vertical-align: middle;
+						line-height: 22px;
+						border: 1px solid #0056a7;
+						border-radius: 3px;
+					}
+				}
+			}
+			.right{
+				height: 100%;
+				overflow: hidden;
+				background: url(../img/lvmama/lv05.png) no-repeat right bottom;
+			}
+			ul{
+				margin: 0;
+				padding-top: 25px;
+				height: 100%;
+				@extend %ul;
+			}
+		}
+	}
+}

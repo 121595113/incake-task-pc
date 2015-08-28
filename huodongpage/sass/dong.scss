@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import "reset";
+.dong-container{
+	width: 1000px;
+	@at-root{
+		.dong-header{
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.dong-content{
+			position: relative;
+			z-index: 1;
+			margin-top: -160px;
+			padding-top: 100px;
+			background: url(../img/dong/dong02.png) no-repeat top;
+			.box{
+				position: relative;
+				.pro-show{
+					position: absolute;
+					a{
+						position: absolute;
+						width: 230px;
+						padding: 0 20px;
+						border-radius: 50px;
+						line-height: 36px;
+						text-align: left;
+						text-decoration: none;
+						color: #fff;
+						background: #fb8080;
+						span{
+							float: right;
+						}
+					}
+				}
+				.inner-box{
+					width: 370px;
+					h1{
+						margin: 0;
+						padding-left: 32px;
+						font-size: 18px;
+						font-style: italic;
+						font-weight: normal;
+						line-height: 2em;
+						background: url(../img/dong/dongbg.png) no-repeat left center;
+						span{
+							margin-left: 10px;
+							color: #1160ac;
+							font-size: .75em;
+						}
+					}
+					img{
+						margin-left: 30px;
+					}
+					p{
+						font-size: 14px;
+						line-height: 1.8em;
+						color: #666;
+					}
+				}
+			}
+			.box1{
+				margin-bottom: 190px;
+				.pro-show{
+					margin-left: 150px;
+					margin-top: 30px;
+				}
+				a{
+					left: 40px;
+				}
+				.inner-box{
+					margin-left: 50%;
+				}
+			}
+			.box2{
+				padding-bottom: 40px;
+				.pro-show{
+					top: -160px;
+					right: 30px;
+				}
+				.inner-box{
+					margin-left: 80px;
+				}
+			}
+		}
+	}
+}
